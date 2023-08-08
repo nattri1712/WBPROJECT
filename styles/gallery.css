@@ -1,0 +1,21 @@
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-top: 0.2rem;
+}
+
+.gallery-section .pictures:nth-child(odd) {
+    grid-column: 1 / span 1;
+}
+
+.gallery-section .pictures:nth-child(even) {
+    grid-column: 2 / span 1;
+}
+
+.pictures img {
+    width: 98%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    aspect-ratio: 2/1
+}

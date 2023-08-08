@@ -1,0 +1,28 @@
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.gallery-section .team-memeber:nth-child(odd) {
+    grid-column: 1 / span 1;
+}
+
+.gallery-section .team-memeber:nth-child(even) {
+    grid-column: 2 / span 1;
+}
+
+.team-member span.field-type {
+    font-weight: bolder;
+    color: black;
+    text-transform: capitalize;
+}
+
+aside {
+    margin-top: 2.5rem;
+}
+
+footer {
+    margin-top: 1.3rem;
+}
